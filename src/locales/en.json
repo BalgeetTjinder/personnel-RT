@@ -1,5 +1,93 @@
 {
-  "title": "Page Title",
-  "welcome": "Welcome",
-  "description": "This is an example of a multilingual site in English."
-}
+  "nav.links.tatarstan": "Official Portal",
+  "nav.links.rias": "Tatarstan Rais (Head)",
+  "nav.links.advice": "Tatarstan State Council",
+  "nav.links.government": "Tatarstan Government",
+  "nav.links.services": "State services",
+  "nav.links.cities": "Tatarstan cities and regions",
+  
+  "welcome.title": "Department of Civil Service and Personnel of the Ministry of Labor, Employment and Social Protection of the Republic of Tatarstan",
+  "welcome.searchBtn": "Search",
+  "welcome.askBtn": "Ask a question",
+
+  "info.title": "Our work includes:",
+  "info.text1": "Selection and placement of staff in the Ministry, territorial bodies, and subordinate institutions;",
+  "info.text2": "Compiling, accounting, placing, and rotation of civil servants and leaders of subordinate institutions;",
+  "info.text3": "Development of normative documents, local documents of the Ministry and programs for personnel support and motivation of civil servants and leaders of subordinate institutions",
+  "info.text4": "Developing proposals for the development of the civil service of the Republic of Tatarstan, improving the effectiveness of professional activities of civil servants, introduction of effective technologies and modern methods of personnel work in the civil service;",
+  "info.text5": "Organization and provision of the activities of the commission for establishing the length of service, the commission for compliance with the requirements to the civil servants' conduct and conflict of interest resolution, the certification commission, the commission for conducting competitions for the vacant position in the civil service of the Ministry;",
+  "info.text6": "Formation and maintenance of a database on the quantitative and qualitative composition of staff of the apparatus and territorial bodies of the Ministry, their development and movement using automated systems;",
+  "info.text7": "Formation of a personnel reserve for replacing positions in the civil service in the Ministry and territorial bodies;",
+  "info.text8": "Organization and provision of competitions for filling vacant positions in the civil service in the apparatus of the Ministry and its territorial bodies;",
+  "info.text9": "Conducting certification and qualification exams for civil servants of the Ministry and its territorial bodies;",
+  "info.text10": "Consideration of letters, complaints, applications, appeals, requests from citizens, organizations, and departments on issues within the competence of the department;",
+  "info.text11": "Work on the prevention of corruption and other offenses in the Ministry, as well as ensuring the Ministry's activities in compliance with the prohibitions, restrictions, obligations, and rules of official conduct by civil servants;",
+  "info.text12": "Verification of information on incomes, property, and property obligations, as well as compliance by civil servants with restrictions established by current legislation;",
+  "info.text13": "Management of the civil service of the apparatus and territorial bodies of the Ministry;",
+  "info.text14": "Formation and maintenance of the Register of civil service positions and the Register of civil servants of the apparatus of the Ministry and territorial bodies;",
+  "info.text15": "Submission of necessary reports on civil servants to the Department for Civil Servants Affairs at the President of the Republic of Tatarstan, to the Territorial body of the Federal State Statistics Service for the Republic of Tatarstan;",
+  "info.text16": "Providing consultative assistance to civil servants and employees of the Ministry and subordinate institutions on issues within the competence of the department;",
+  "info.text17": "Issuance and issuance of official IDs;",
+  "info.text18": "Organization of official inspections;",
+  "info.text19": "Conducting military registration.",
+  "info.toggleMore": "show more",
+  "info.toggleLess": "show less",
+
+  "employees.title": "Our Employees",
+  "employee.department": "Department of Civil Service and Personnel",
+  
+  "employee.name.1": "Alla Bernikova",
+  "employee.position.1": "Head of Department",
+  "employee.phone.1": "(843) 557-20-16",
+  "employee.email.1": "Alla.Bernikova@tatar.ru",
+  
+  "employee.name.2": "Alsu Talyshhanova",
+  "employee.position.2": "Deputy Head of Department",
+  "employee.phone.2": "(843) 557-19-35",
+  "employee.email.2": "Alsu.Talyshhanova@tatar.ru",
+  
+  "employee.name.3": "Aygul Muhammadullina",
+  "employee.position.3": "Leading Advisor",
+  "employee.phone.3": "(843) 557-20-18",
+  "employee.email.3": "Aygul.Muhammadullina@tatar.ru",
+  
+  "employee.name.4": "Svetlana Sandrikova",
+  "employee.position.4": "Leading Advisor",
+  "employee.phone.4": "(843) 557-21-98",
+  "employee.email.4": "Sandrikova.Svetlana@tatar.ru",
+  
+  "employee.name.5": "Olga Dmitrieva",
+  "employee.position.5": "Leading Specialist",
+  "employee.phone.5": "(843) 557-21-63",
+  "employee.email.5": "Olga.DmitrievaV@tatar.ru",
+  
+  "employee.name.6": "Yulia Morkunas",
+  "employee.position.6": "Leading Specialist",
+  "employee.phone.6": "(843) 557-21-65",
+  "employee.email.6": "Morkunas.Yuliya@tatar.ru",
+  
+  "employee.name.7": "Tatyana Kapitonova",
+  "employee.position.7": "Senior Specialist 1st Category",
+  "employee.phone.7": "(843) 557-21-50",
+  "employee.email.7": "Kapitonova.TatyanaV@tatar.ru",
+
+  "employee.contact.phone": "Phone:",
+  "employee.contact.email": "Email:",
+
+  "position.title": "How to get?",
+
+  "footer.title": "Department of Civil Service and Personnel of the Ministry of Labor, Employment and Social Protection of the Republic of Tatarstan",
+  "footer.address": "Address: 420044, Kazan, Volgogradskaya St., 47",
+  "footer.phone": "Phone: hotline: 8-800-100-00-01, 557-21-12 (Public Relations Sector)",
+  "footer.fax": "Fax: +7 (843) 523-90-74",
+  "footer.email": "E-Mail: mtsz@tatar.ru",
+  "footer.documents": "documents",
+  "footer.links.normative": "Regulatory documents",
+  "footer.links.assessment": "Regulatory Impact Assessment",
+  "footer.links.antimonopoly": "Antimonopoly Compliance",
+  "footer.links.terrorism": "Prevention of Terrorism and Extremism",
+  "footer.links.civilDefense": "Civil Defense and Emergency Situations",
+  "footer.links.methodical": "Methodical Materials",
+  "footer.links.archive": "Archive",
+  "footer.askQuestion": "Ask a Question"
+}           

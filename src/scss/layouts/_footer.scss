@@ -1,0 +1,96 @@
+.footer {
+  padding: 20px;
+  background-color: $dark;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content {
+  margin: 30px 0px;
+  display: flex;
+  width: 100%;
+}
+
+.footer__divider {
+  width: 1px;
+  background-color: $gray;
+}
+
+.footer__left,
+.footer__right {
+  width: 49%;
+}
+
+.footer__right {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.footer__right {
+  margin-right: 30px;
+}
+
+.footer__title {
+  color: $light;
+  font-weight: lighter;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.footer__title-second {
+  color: $light;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.footer__address,
+.footer__phone,
+.footer__fax,
+.footer__email,
+.footer__links a {
+  display: block;
+  margin-bottom: 20px;
+  color: $gray;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links a {
+  color: #000;
+  text-decoration: none;
+  color: $gray;
+  margin-bottom: 20px;
+}
+
+.footer__ask-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer__ask-btn {
+  border: none;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-wrap: nowrap;
+  background-color: $blue;
+  color: $white;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: darken($blue, 10%);
+  }
+}

@@ -1,0 +1,11 @@
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/base';
+
+@import 'layouts/header';
+@import 'layouts/footer';
+
+@import 'components/welcome'; 
+@import 'components/info'; 
+@import 'components/employees'; 
+@import 'components/position'; 

@@ -1,0 +1,59 @@
+.employees {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title { 
+    color: $blue;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__delimiter {
+    height: 3px;
+    width: 100%;
+    background-color: $gray;
+    margin-bottom: 20px;
+  }
+
+  &__delimiter-second {
+    height: 3px;
+    width: 100%;
+    background-color: $light;
+    margin-bottom: 20px;
+  }
+}
+
+.employee-card {
+  margin: 30px 0px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  width: 100%;
+  color: $dark;
+  max-height: 320px;
+
+  &__department {
+    text-transform: uppercase;
+    font-weight: bold;
+    flex: 1;
+  }
+
+  &__info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .employee-name, .employee-position, .employee-contact {
+      margin-bottom: 10px;
+    }
+    .employee-contact span {
+      font-weight: bold;
+    }
+    .employee-contact p:first-child {
+      margin-bottom: 10px;
+      color: $gray;
+    }
+  }
+}

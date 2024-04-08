@@ -1,0 +1,26 @@
+@import 'variables';
+
+body {
+  font-family: $font-family-default;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+[class*="wrapper"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  header, 
+  nav, 
+  main, 
+  footer {
+    max-width: 100%; 
+  }
+}

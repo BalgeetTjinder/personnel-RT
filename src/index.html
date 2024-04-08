@@ -1,32 +1,495 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="title">Заголовок страницы</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <!-- Навигация сайта -->
-            <button data-lang="ru">Русский</button>
-            <button data-lang="tt">Татарский</button>
-            <button data-lang="en">English</button>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="https://tatarstan.ru/"
+                class="nav__link"
+                data-i18n="nav.links.tatarstan"
+                >Официальный Татарстан</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://rais.tatarstan.ru/"
+                class="nav__link"
+                data-i18n="nav.links.rias"
+                >Раис РТ</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://gossov.tatarstan.ru/"
+                class="nav__link"
+                data-i18n="nav.links.advice"
+                >Государственный Совет РТ</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://prav.tatarstan.ru/"
+                class="nav__link"
+                data-i18n="nav.links.government"
+                >Правительство РТ</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://uslugi.tatarstan.ru/"
+                class="nav__link"
+                data-i18n="nav.links.services"
+                >Госуслуги</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://msu.tatarstan.ru/"
+                class="nav__link"
+                data-i18n="nav.links.cities"
+                >Города и районы РТ</a
+              >
+            </li>
+          </ul>
         </nav>
+        <div class="language-switcher">
+          <button class="language-switcher__btn" data-lang="ru">РУС</button>
+          <button class="language-switcher__btn" data-lang="tt">ТАТ</button>
+          <button class="language-switcher__btn" data-lang="en">ENG</button>
+        </div>
+      </div>
     </header>
-
     <main>
-        <h1 data-i18n="welcome">Добро пожаловать</h1>
-        <p data-i18n="description">Описание на текущем языке</p>
+      <section class="welcome">
+        <div class="welcome__wrapper">
+          <div class="welcome__container">
+            <div class="welcome__title">
+              <h1 data-i18n="welcome.title">
+                отдел государственной службы и кадров министерствА труда,
+                занятости и социальной защиты Республики Татарстан
+              </h1>
+            </div>
+            <div class="welcome__actions">
+              <button class="welcome__btn welcome__search-btn">
+                <i class="fas fa-search"></i>
+                <span data-i18n="welcome.searchBtn">Поиск по сайту</span>
+              </button>
+              <button
+                class="welcome__btn welcome__ask-btn"
+                data-i18n="welcome.askBtn"
+              >
+                Задать вопрос
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="info__container">
+          <h2 class="info__title" data-i18n="info.title">
+            Наша работа включает в себя:
+          </h2>
+          <ul class="info__text" id="infoText">
+            <li data-i18n="info.text1">
+              подбор и расстановка кадров в Министерстве, территориальных
+              органах, подведомственных учреждениях;
+            </li>
+            <li data-i18n="info.text2">
+              комплектование, учет, расстановка и ротация государственных
+              служащих и руководителей подведомственных учреждений;
+            </li>
+            <li data-i18n="info.text3">
+              разработка проектов нормативных документов, локальных документов
+              Министерства и программ по кадровому обеспечению и мотивации
+              государственных служащих и руководителей подведомственных
+              учреждений
+            </li>
+            <li data-i18n="info.text4">
+              разработка предложений по развитию государственной гражданской
+              службы Республики Татарстан, повышению результативности
+              профессиональной служебной деятельности государственных служащих,
+              внедрение на государственной службе эффективных технологий и
+              современных методов кадровой работы;
+            </li>
+            <li data-i18n="info.text5">
+              организация и обеспечение деятельности комиссии по установлению
+              стажа государственной службы, комиссии по соблюдению требований к
+              служебному поведению государственных служащих и урегулированию
+              конфликта интересов, аттестационной комиссии, комиссии по
+              проведению конкурса на замещение вакантной должности
+              государственной гражданской службы Министерства;
+            </li>
+            <li data-i18n="info.text6">
+              формирование и ведение банка данных о количественном и
+              качественном составе кадров аппарата и территориальных органов
+              Министерства, их развитии и движении с использованием
+              автоматизированных систем;
+            </li>
+            <li data-i18n="info.text7">
+              формирование кадрового резерва для замещения должностей
+              государственной гражданской службы в Министерстве и
+              территориальных органах;
+            </li>
+            <li data-i18n="info.text8">
+              организация и обеспечение проведения конкурсов на замещение
+              вакантных должностей государственной гражданской службы в аппарате
+              Министерства&nbsp;и его территориальных органах;&nbsp;
+            </li>
+            <li data-i18n="info.text9">
+              проведение аттестации и квалификационных экзаменов государственных
+              гражданских служащих Министерства&nbsp;и его территориальных
+              органов;
+            </li>
+            <li data-i18n="info.text10">
+              рассмотрение писем, жалоб, заявлений, обращений, запросов граждан,
+              организаций и ведомств по вопросам, относящимся к компетенции
+              отдела;
+            </li>
+            <li data-i18n="info.text11">
+              работа по профилактике коррупционных и иных правонарушений в
+              Министерстве, а также обеспечение деятельности Министерства по
+              соблюдению государственными служащими запретов, ограничений,
+              обязательств и правил служебного поведения;
+            </li>
+            <li data-i18n="info.text12">
+              осуществление проверки сведений о доходах, об имуществе и
+              обязательствах имущественного характера, а также&nbsp;соблюдения
+              государственными служащими ограничений, установленных действующим
+              законодательством;
+            </li>
+            <li data-i18n="info.text13">
+              управление государственной службой аппарата и территориальных
+              органов Министерства;
+            </li>
+            <li data-i18n="info.text14">
+              формирование и ведение Реестра должностей государственной
+              службы&nbsp;и Реестра государственных служащих аппарата
+              Министерства и территориальных органов;
+            </li>
+            <li data-i18n="info.text15">
+              представление необходимых форм отчетности по государственным
+              служащим в Департамент по делам государственных служащих при
+              Президенте Республики Татарстан, в Территориальный орган
+              Федеральной службы государственной статистики по Республике
+              Татарстан;
+            </li>
+            <li data-i18n="info.text16">
+              оказание государственным служащим и работникам Министерства и
+              подведомственных учреждений консультативной помощи по вопросам,
+              входящим в компетенцию отдела;
+            </li>
+            <li data-i18n="info.text17">
+              оформление и выдача служебных удостоверений;
+            </li>
+            <li data-i18n="info.text18">
+              организация проведения служебных проверок;
+            </li>
+            <li data-i18n="info.text19">ведение воинского учета.</li>
+          </ul>
+          <button class="info__toggle-btn" id="toggleText">
+            <span data-i18n="info.toggleMore">Показать еще</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+      </section>
+      <section class="employees">
+        <div class="employees__wrapper">
+          <div class="employees__title">
+            <h2 data-i18n="employees.title">Наши сотрудники</h2>
+          </div>
+          <div class="employees__delimiter"></div>
+          <div class="employee-card">
+            <div class="employee-card__department">
+              <h2 data-i18n="employee.department">Отдел государственной службы и кадров</h2>
+            </div>
+            <div class="employee-card__info">
+              <div>
+                <div class="employee-name"><h2 data-i18n="employee.name.1"></h2></div>
+                  Берникова Алла Михайловна
+                </h2>
+                <p class="employee-position" data-i18n="employee.position.1">
+                  Начальник отдела
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.phone">Телефон:</p>
+                <p class="contact-info" data-i18n="employee.phone.1">
+                  (843) 557-20-16
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.email">Email:</p>
+                <p class="contact-info" data-i18n="employee.email.1">
+                  Alla.Bernikova@tatar.ru
+                </p>
+              </div>
+            </div>
+            <div class="employee-card__photo">
+              <img
+                src="assets/images/employee_1.png"
+                alt="Берникова Алла Михайловна"
+              />
+            </div>
+          </div>
+          <div class="employees__delimiter-second"></div>
+          <div class="employee-card">
+            <div class="employee-card__department"></div>
+            <div class="employee-card__info">
+              <div>
+                <h2 class="employee-name" data-i18n="employee.name.2">
+                  Талышханова Алсу Мударисовна
+                </h2>
+                <p class="employee-position" data-i18n="employee.position.2">
+                  Заместитель начальника отдела
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.phone">Телефон:</p>
+                <p class="contact-info" data-i18n="employee.phone.2">
+                  (843) 557-19-35
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.email">Email:</p>
+                <p class="contact-info" data-i18n="employee.email.2">
+                  Alsu.Talyshhanova@tatar.ru
+                </p>
+              </div>
+            </div>
+            <div class="employee-card__photo">
+              <img
+                src="assets/images/employee_2.png"
+                alt="Талышханова Алсу Мударисовна"
+              />
+            </div>
+          </div>
+          <div class="employees__delimiter-second"></div>
+
+          <div class="employee-card">
+            <div class="employee-card__department"></div>
+            <div class="employee-card__info">
+              <div>
+                <h2 class="employee-name" data-i18n="employee.name.3">
+                  Мухаммадуллина Айгуль Шагитовна
+                </h2>
+                <p class="employee-position" data-i18n="employee.position.3">
+                  Ведущий советник
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.phone">Телефон:</p>
+                <p class="contact-info" data-i18n="employee.phone.3">
+                  (843) 557-20-18
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.email">Email:</p>
+                <p class="contact-info" data-i18n="employee.email.3">
+                  Aygul.Muhammadullina@tatar.ru
+                </p>
+              </div>
+            </div>
+            <div class="employee-card__photo">
+              <img
+                src="assets/images/employee_3.png"
+                alt="Мухаммадуллина Айгуль Шагитовна"
+              />
+            </div>
+          </div>
+          <div class="employees__delimiter-second"></div>
+
+          <div class="employee-card">
+            <div class="employee-card__department"></div>
+            <div class="employee-card__info">
+              <div>
+                <h2 class="employee-name" data-i18n="employee.name.4">
+                  Сандрикова Светлана Фаридовна
+                </h2>
+                <p class="employee-position" data-i18n="employee.position.4">
+                  Ведущий советник
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.phone">Телефон:</p>
+                <p class="contact-info" data-i18n="employee.phone.4">
+                  (843) 557-21-98
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.email">Email:</p>
+                <p class="contact-info" data-i18n="employee.email.4">
+                  Sandrikova.Svetlana@tatar.ru
+                </p>
+              </div>
+            </div>
+            <div class="employee-card__photo">
+              <img
+                src="assets/images/employee_4.png"
+                alt="Сандрикова Светлана Фаридовна"
+              />
+            </div>
+          </div>
+          <div class="employees__delimiter-second"></div>
+
+          <div class="employee-card">
+            <div class="employee-card__department"></div>
+            <div class="employee-card__info">
+              <div>
+                <h2 class="employee-name" data-i18n="employee.name.5">
+                  Дмитриева Ольга Викторовна
+                </h2>
+                <p class="employee-position" data-i18n="employee.position.5">
+                  Ведущий специалист
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.phone">Телефон:</p>
+                <p class="contact-info" data-i18n="employee.phone.5">
+                  (843) 557-21-63
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.email">Email:</p>
+                <p class="contact-info" data-i18n="employee.email.5">
+                  Olga.DmitrievaV@tatar.ru
+                </p>
+              </div>
+            </div>
+            <div class="employee-card__photo">
+              <img
+                src="assets/images/employee_5.png"
+                alt="Дмитриева Ольга Викторовна"
+              />
+            </div>
+          </div>
+          <div class="employees__delimiter-second"></div>
+
+          <div class="employee-card">
+            <div class="employee-card__department"></div>
+            <div class="employee-card__info">
+              <div>
+                <h2 class="employee-name" data-i18n="employee.name.6">
+                  Моркунас Юлия Валериевна
+                </h2>
+                <p class="employee-position" data-i18n="employee.position.6">
+                  Ведущий специалист
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.phone">Телефон:</p>
+                <p class="contact-info" data-i18n="employee.phone.6">
+                  (843) 557-21-65
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.email">Email:</p>
+                <p class="contact-info" data-i18n="employee.email.6">
+                  Morkunas.Yuliya@tatar.ru
+                </p>
+              </div>
+            </div>
+            <div class="employee-card__photo">
+              <img
+                src="assets/images/employee_6.png"
+                alt="Моркунас Юлия Валериевна"
+              />
+            </div>
+          </div>
+          <div class="employees__delimiter-second"></div>
+
+          <div class="employee-card">
+            <div class="employee-card__department"></div>
+            <div class="employee-card__info">
+              <div>
+                <h2 class="employee-name" data-i18n="employee.name.7">
+                  Капитонова Татьяна Викторовна
+                </h2>
+                <p class="employee-position" data-i18n="employee.position.7">
+                  Старший специалист 1 разряда
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.phone">Телефон:</p>
+                <p class="contact-info" data-i18n="employee.phone.7">
+                  (843) 557-21-50
+                </p>
+              </div>
+              <div class="employee-contact">
+                <p data-i18n="employee.contact.email">Email:</p>
+                <p class="contact-info" data-i18n="employee.email.7">
+                  Kapitonova.TatyanaV@tatar.ru
+                </p>
+              </div>
+            </div>
+            <div class="employee-card__photo">
+              <img
+                src="assets/images/employee_7.png"
+                alt="Капитонова Татьяна Викторовна"
+              />
+            </div>
+          </div>
+          <div class="employees__delimiter-second"></div>
+        </div>
+      </section>
+      <section class="position">
+        <div class="position__wrapper">
+          <h2 class="position__title" data-i18n="position.title">Как добраться?</h2>
+          <div id="yandexMap" class="position__map"></div>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <!-- Футер страницы -->
-    </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/search.js"></script>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <h2 class="footer__title" data-i18n="footer.title">отдел государственной службы и кадров министерствА труда, занятости и социальной защиты Республики Татарстан</h2>
+                    <p class="footer__address" data-i18n="footer.address">Адрес: 420044, г. Казань, ул. Волгоградская, д. 47</p>
+                    <p class="footer__phone" data-i18n="footer.phone">Телефон: гор.линия: 8-800-100-00-01, 557-21-12 (Сектор по работе с населением)</p>
+                    <p class="footer__fax" data-i18n="footer.fax">Факс: +7 (843) 523-90-74</p>
+                    <p class="footer__email" data-i18n="footer.email">E-Mail: mtsz@tatar.ru</p>
+                </div>
+                <div class="footer__divider"></div>
+                <div class="footer__right">
+                    <div class="footer__documents">
+                        <h3 class="footer__title-second" data-i18n="footer.documents">документы</h3>
+                        <ul class="footer__links">
+                            <li><a href="https://mtsz.tatarstan.ru/rus/docs_all.htm" data-i18n="footer.links.normative">Нормативные документы</a></li>
+                            <li><a href="https://mtsz.tatarstan.ru/rus/docs_all.htm" data-i18n="footer.links.assessment">Оценка регулирующего воздействия</a></li>
+                            <li><a href="https://mtsz.tatarstan.ru/rus/antimonopolniy-komplaens-4581549.htm" data-i18n="footer.links.antimonopoly">Антимонопольный комплаенс</a></li>
+                            <li><a href="https://mtsz.tatarstan.ru/rus/profilaktika-terrorizma-i-ekstremizma.htm" data-i18n="footer.links.terrorism">Профилактика терроризма и экстремизма</a></li>
+                            <li><a href="https://mtsz.tatarstan.ru/rus/kompleksnaya-bezopasnost-podvedomstvennih-2348197.htm" data-i18n="footer.links.civilDefense">Гражданская оборона и защита от чрезвычайных ситуаций</a></li>
+                            <li><a href="https://mtsz.tatarstan.ru/rus/metodicheskie-materiali-2472817.htm" data-i18n="footer.links.methodical">Методические материалы</a></li>
+                            <li><a href="https://mtsz.tatarstan.ru/rus/arhiv-2465997.htm" data-i18n="footer.links.archive">Архив</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__ask-question">
+                        <button class="footer__ask-btn" data-i18n="footer.askQuestion">Задать вопрос</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/i18n.js"></script>
-</body>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>  
+    <script src="js/ymaps.js"></script>  
+  </body>
 </html>
