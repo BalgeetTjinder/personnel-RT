@@ -1,0 +1,66 @@
+.contact-form {
+    .required {
+        color: red;
+    }
+
+    width: 420px;
+    background-color: inherit;
+    border: 3px solid $light;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__group {
+        margin-bottom: 15px;
+    }
+
+    &__label {
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    &__input,
+    &__textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid $light;
+        box-sizing: border-box;
+
+        &:focus {
+            border-color: $blue;
+            outline: none;
+        }
+
+        &::placeholder {
+            color: $gray;
+        }
+    }
+
+    &__textarea {
+        resize: none;
+        height: 150px;
+    }
+
+    &__submit-button {
+        background-color: $blue;
+        color: $white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+
+        &:hover {
+            background-color: darken($blue, 10%);
+        }
+    }
+}

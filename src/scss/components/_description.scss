@@ -1,0 +1,41 @@
+.back {
+  margin: 20px 0px;
+  padding: 5px 0;
+  text-align: left;
+
+  &__link {
+      display: inline-block;
+      color: $blue;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+
+      .fas {
+          margin-right: 5px;
+      }
+
+      &:hover {
+          color: darken($blue, 10%);
+      }
+  }
+}
+
+
+
+.description {
+  padding: 20px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  color: $dark;
+
+  &__title {
+      margin-bottom: 10px;
+      font-weight: bold;
+  }
+
+  &__text {
+      color: #666;
+      font-weight: normal;
+  }
+}

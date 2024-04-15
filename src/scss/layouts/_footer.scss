@@ -1,14 +1,13 @@
 .footer {
-  padding: 20px;
   background-color: $dark;
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer__content {
-  margin: 30px 0px;
   display: flex;
+  padding: 30px 0px 30px 0px;
   width: 100%;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .footer__divider {
@@ -18,17 +17,13 @@
 
 .footer__left,
 .footer__right {
-  width: 49%;
+  flex: 1;
 }
 
 .footer__right {
   display: flex;
   justify-content: space-between;
-  margin-left: 30px;
-}
-
-.footer__right {
-  margin-right: 30px;
+  width: 100%;
 }
 
 .footer__title {
@@ -86,7 +81,7 @@
   background-color: $blue;
   color: $white;
 
-  &:focus {
+  &:focus { 
     outline: none;
   }
 

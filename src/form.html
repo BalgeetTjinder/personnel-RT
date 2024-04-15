@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задать вопрос - Отдел государственной службы и кадров</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="https://tatarstan.ru/" class="nav__link"
+                >Официальный Татарстан</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="https://rais.tatarstan.ru/" class="nav__link">Раис РТ</a>
+            </li>
+            <li class="nav__item">
+              <a href="https://gossov.tatarstan.ru/" class="nav__link"
+                >Государственный Совет РТ</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="https://prav.tatarstan.ru/" class="nav__link"
+                >Правительство РТ</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="https://uslugi.tatarstan.ru/" class="nav__link"
+                >Госуслуги</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="https://msu.tatarstan.ru/" class="nav__link"
+                >Города и районы РТ</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="language-switcher">
+          <button class="language-switcher__btn" data-lang="ru">РУС</button>
+          <button class="language-switcher__btn" data-lang="tt">ТАТ</button>
+          <button class="language-switcher__btn" data-lang="en">ENG</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="description">
+        <div class="description__wrapper">
+            <div onclick="location.href='index.html';" class="back">
+                <a class="back__link">
+                    <i class="fas fa-arrow-left"></i> Назад
+                </a>
+            </div>
+          <h2 class="description__title" data-i18n="description.title">
+            Уважаемые посетители сайта!
+          </h2>
+          <p class="description__text" data-i18n="description.text">
+            Чтобы получить оперативный и квалифицированный ответ на Ваш вопрос,
+            укажите корректные сведения о себе. В обязательном порядке должны
+            быть указаны фамилия, имя, адрес электронной почты для направления
+            ответа. Лаконично и грамотно сформулируйте текст Вашего обращения.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <div class="contact-form__wrapper">
+          <form
+            class="contact-form__form"
+          >
+            <div class="contact-form__group">
+              <label
+                for="lastname"
+                class="contact-form__label"
+                data-i18n="contact-form.label.lastname"
+                >Фамилия<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                required
+                class="contact-form__input"
+                placeholder="Введите вашу фамилию"
+              />
+            </div>
+
+            <div class="contact-form__group">
+              <label
+                for="firstname"
+                class="contact-form__label"
+                data-i18n="contact-form.label.firstname"
+                >Имя<span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                required
+                class="contact-form__input"
+                placeholder="Имя"
+              />
+            </div>
+
+            <div class="contact-form__group">
+              <label
+                for="patronymic"
+                class="contact-form__label"
+                data-i18n="contact-form.label.patronymic"
+                >Отчество (при наличии)</label
+              >
+              <input
+                type="text"
+                id="patronymic"
+                name="patronymic"
+                class="contact-form__input"
+                placeholder="Введите ваше отчество"
+              />
+            </div>
+
+            <div class="contact-form__group">
+              <label
+                for="email"
+                class="contact-form__label"
+                data-i18n="contact-form.label.email"
+                >Адрес электронной почты<span class="required">*</span></label
+              >
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="contact-form__input"
+                placeholder="Введите ваш email"
+              />
+            </div>
+
+            <div class="contact-form__group">
+              <label
+                for="question"
+                class="contact-form__label"
+                data-i18n="contact-form.label.question"
+                >Ваш вопрос<span class="required">*</span></label
+              >
+              <textarea
+                id="question"
+                name="question"
+                required
+                class="contact-form__textarea"
+                placeholder="Введите не более 1000 символов"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="contact-form__submit-button"
+              data-i18n="contact-form.submit"
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__left">
+            <h2 class="footer__title" data-i18n="footer.title">
+              отдел государственной службы и кадров министерствА труда,
+              занятости и социальной защиты Республики Татарстан
+            </h2>
+            <p class="footer__address" data-i18n="footer.address">
+              Адрес: 420044, г. Казань, ул. Волгоградская, д. 47
+            </p>
+            <p class="footer__phone" data-i18n="footer.phone">
+              Телефон: гор.линия: 8-800-100-00-01, 557-21-12 (Сектор по работе с
+              населением)
+            </p>
+            <p class="footer__fax" data-i18n="footer.fax">
+              Факс: +7 (843) 523-90-74
+            </p>
+            <p class="footer__email" data-i18n="footer.email">
+              E-Mail: mtsz@tatar.ru
+            </p>
+          </div>
+          <div class="footer__divider"></div>
+          <div class="footer__right">
+            <div class="footer__documents">
+              <h3 class="footer__title-second" data-i18n="footer.documents">
+                документы
+              </h3>
+              <ul class="footer__links">
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/docs_all.htm"
+                    data-i18n="footer.links.normative"
+                    >Нормативные документы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/docs_all.htm"
+                    data-i18n="footer.links.assessment"
+                    >Оценка регулирующего воздействия</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/antimonopolniy-komplaens-4581549.htm"
+                    data-i18n="footer.links.antimonopoly"
+                    >Антимонопольный комплаенс</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/profilaktika-terrorizma-i-ekstremizma.htm"
+                    data-i18n="footer.links.terrorism"
+                    >Профилактика терроризма и экстремизма</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/kompleksnaya-bezopasnost-podvedomstvennih-2348197.htm"
+                    data-i18n="footer.links.civilDefense"
+                    >Гражданская оборона и защита от чрезвычайных ситуаций</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/metodicheskie-materiali-2472817.htm"
+                    data-i18n="footer.links.methodical"
+                    >Методические материалы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/arhiv-2465997.htm"
+                    data-i18n="footer.links.archive"
+                    >Архив</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ymaps.js"></script>
+  </body>
+</html>

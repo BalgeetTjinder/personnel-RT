@@ -89,5 +89,20 @@
   "footer.links.civilDefense": "Гражданская оборона и защита от чрезвычайных ситуаций",
   "footer.links.methodical": "Методические материалы",
   "footer.links.archive": "Архив",
-  "footer.askQuestion": "Задать вопрос"
+  "footer.askQuestion": "Задать вопрос",
+
+  "description.title": "Уважаемые посетители сайта!",
+  "description.text": "Чтобы получить оперативный и квалифицированный ответ на Ваш вопрос, укажите корректные сведения о себе. В обязательном порядке должны быть указаны фамилия, имя, адрес электронной почты для направления ответа. Лаконично и грамотно сформулируйте текст Вашего обращения.",
+  "contact-form.label.lastname": "Фамилия",
+  "contact-form.label.firstname": "Имя",
+  "contact-form.label.patronymic": "Отчество (при наличии)",
+  "contact-form.label.email": "Адрес электронной почты",
+  "contact-form.label.question": "Ваш вопрос",
+  "contact-form.submit": "Отправить",
+
+  "placeholder.lastname": "Введите вашу фамилию",
+  "placeholder.firstname": "Имя",
+  "placeholder.patronymic": "Введите ваше отчество",
+  "placeholder.email": "Введите ваш email",
+  "placeholder.question": "Введите не более 1000 символов"
 }

@@ -89,5 +89,20 @@
   "footer.links.civilDefense": "Civil Defense and Emergency Situations",
   "footer.links.methodical": "Methodical Materials",
   "footer.links.archive": "Archive",
-  "footer.askQuestion": "Ask a Question"
+  "footer.askQuestion": "Ask a Question",
+
+  "description.title": "Dear visitors!",
+  "description.text": "To receive a prompt and qualified response to your question, please provide accurate information about yourself. It is mandatory to include your last name, first name, and email address for response. Formulate the text of your request concisely and competently.",
+  "contact-form.label.lastname": "Last Name",
+  "contact-form.label.firstname": "First Name",
+  "contact-form.label.patronymic": "Middle Name (if applicable)",
+  "contact-form.label.email": "Email Address",
+  "contact-form.label.question": "Your Question",
+  "contact-form.submit": "Submit",
+  
+  "placeholder.lastname": "Enter your last name",
+  "placeholder.firstname": "First name",
+  "placeholder.patronymic": "Enter your middle name (if applicable)",
+  "placeholder.email": "Enter your email",
+  "placeholder.question": "Enter no more than 1000 characters"
 }           

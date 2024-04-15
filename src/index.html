@@ -15,6 +15,24 @@
     />
   </head>
   <body>
+    <div
+      id="searchModal"
+      class="search-modal"
+      onclick="closeSearchDialog(event)"
+      style="display: none"
+    >
+      <div class="search-dialog" onclick="event.stopPropagation()">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Введите запрос" />
+          <button onclick="performSearch()">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="underline"></div>
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+
     <header class="header">
       <div class="header__wrapper">
         <nav class="nav">
@@ -87,13 +105,17 @@
               </h1>
             </div>
             <div class="welcome__actions">
-              <button class="welcome__btn welcome__search-btn">
+              <button
+                class="welcome__btn welcome__search-btn"
+                onclick="openSearchDialog()"
+              >
                 <i class="fas fa-search"></i>
                 <span data-i18n="welcome.searchBtn">Поиск по сайту</span>
               </button>
               <button
                 class="welcome__btn welcome__ask-btn"
                 data-i18n="welcome.askBtn"
+                onclick="location.href='form.html';"
               >
                 Задать вопрос
               </button>
@@ -217,13 +239,15 @@
           <div class="employees__delimiter"></div>
           <div class="employee-card">
             <div class="employee-card__department">
-              <h2 data-i18n="employee.department">Отдел государственной службы и кадров</h2>
+              <h2 data-i18n="employee.department">
+                Отдел государственной службы и кадров
+              </h2>
             </div>
             <div class="employee-card__info">
               <div>
-                <div class="employee-name"><h2 data-i18n="employee.name.1"></h2></div>
-                  Берникова Алла Михайловна
-                </h2>
+                <div class="employee-name">
+                  <h2 data-i18n="employee.name.1">Берникова Алла Михайловна</h2>
+                </div>
                 <p class="employee-position" data-i18n="employee.position.1">
                   Начальник отдела
                 </p>
@@ -248,7 +272,7 @@
               />
             </div>
           </div>
-          <div class="employees__delimiter-second"></div>
+          <div class="employees__delimiter"></div>
           <div class="employee-card">
             <div class="employee-card__department"></div>
             <div class="employee-card__info">
@@ -450,46 +474,113 @@
       </section>
       <section class="position">
         <div class="position__wrapper">
-          <h2 class="position__title" data-i18n="position.title">Как добраться?</h2>
+          <h2 class="position__title" data-i18n="position.title">
+            Как добраться?
+          </h2>
           <div id="yandexMap" class="position__map"></div>
         </div>
       </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="footer__content">
-                <div class="footer__left">
-                    <h2 class="footer__title" data-i18n="footer.title">отдел государственной службы и кадров министерствА труда, занятости и социальной защиты Республики Татарстан</h2>
-                    <p class="footer__address" data-i18n="footer.address">Адрес: 420044, г. Казань, ул. Волгоградская, д. 47</p>
-                    <p class="footer__phone" data-i18n="footer.phone">Телефон: гор.линия: 8-800-100-00-01, 557-21-12 (Сектор по работе с населением)</p>
-                    <p class="footer__fax" data-i18n="footer.fax">Факс: +7 (843) 523-90-74</p>
-                    <p class="footer__email" data-i18n="footer.email">E-Mail: mtsz@tatar.ru</p>
-                </div>
-                <div class="footer__divider"></div>
-                <div class="footer__right">
-                    <div class="footer__documents">
-                        <h3 class="footer__title-second" data-i18n="footer.documents">документы</h3>
-                        <ul class="footer__links">
-                            <li><a href="https://mtsz.tatarstan.ru/rus/docs_all.htm" data-i18n="footer.links.normative">Нормативные документы</a></li>
-                            <li><a href="https://mtsz.tatarstan.ru/rus/docs_all.htm" data-i18n="footer.links.assessment">Оценка регулирующего воздействия</a></li>
-                            <li><a href="https://mtsz.tatarstan.ru/rus/antimonopolniy-komplaens-4581549.htm" data-i18n="footer.links.antimonopoly">Антимонопольный комплаенс</a></li>
-                            <li><a href="https://mtsz.tatarstan.ru/rus/profilaktika-terrorizma-i-ekstremizma.htm" data-i18n="footer.links.terrorism">Профилактика терроризма и экстремизма</a></li>
-                            <li><a href="https://mtsz.tatarstan.ru/rus/kompleksnaya-bezopasnost-podvedomstvennih-2348197.htm" data-i18n="footer.links.civilDefense">Гражданская оборона и защита от чрезвычайных ситуаций</a></li>
-                            <li><a href="https://mtsz.tatarstan.ru/rus/metodicheskie-materiali-2472817.htm" data-i18n="footer.links.methodical">Методические материалы</a></li>
-                            <li><a href="https://mtsz.tatarstan.ru/rus/arhiv-2465997.htm" data-i18n="footer.links.archive">Архив</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__ask-question">
-                        <button class="footer__ask-btn" data-i18n="footer.askQuestion">Задать вопрос</button>
-                    </div>
-                </div>
+      <div class="footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__left">
+            <h2 class="footer__title" data-i18n="footer.title">
+              отдел государственной службы и кадров министерствА труда,
+              занятости и социальной защиты Республики Татарстан
+            </h2>
+            <p class="footer__address" data-i18n="footer.address">
+              Адрес: 420044, г. Казань, ул. Волгоградская, д. 47
+            </p>
+            <p class="footer__phone" data-i18n="footer.phone">
+              Телефон: гор.линия: 8-800-100-00-01, 557-21-12 (Сектор по работе с
+              населением)
+            </p>
+            <p class="footer__fax" data-i18n="footer.fax">
+              Факс: +7 (843) 523-90-74
+            </p>
+            <p class="footer__email" data-i18n="footer.email">
+              E-Mail: mtsz@tatar.ru
+            </p>
+          </div>
+          <div class="footer__divider"></div>
+          <div class="footer__right">
+            <div class="footer__documents">
+              <h3 class="footer__title-second" data-i18n="footer.documents">
+                документы
+              </h3>
+              <ul class="footer__links">
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/docs_all.htm"
+                    data-i18n="footer.links.normative"
+                    >Нормативные документы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/docs_all.htm"
+                    data-i18n="footer.links.assessment"
+                    >Оценка регулирующего воздействия</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/antimonopolniy-komplaens-4581549.htm"
+                    data-i18n="footer.links.antimonopoly"
+                    >Антимонопольный комплаенс</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/profilaktika-terrorizma-i-ekstremizma.htm"
+                    data-i18n="footer.links.terrorism"
+                    >Профилактика терроризма и экстремизма</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/kompleksnaya-bezopasnost-podvedomstvennih-2348197.htm"
+                    data-i18n="footer.links.civilDefense"
+                    >Гражданская оборона и защита от чрезвычайных ситуаций</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/metodicheskie-materiali-2472817.htm"
+                    data-i18n="footer.links.methodical"
+                    >Методические материалы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mtsz.tatarstan.ru/rus/arhiv-2465997.htm"
+                    data-i18n="footer.links.archive"
+                    >Архив</a
+                  >
+                </li>
+              </ul>
             </div>
+            <div class="footer__ask-question">
+              <button
+                class="footer__ask-btn"
+                data-i18n="footer.askQuestion"
+                onclick="location.href='form.html';"
+              >
+                Задать вопрос
+              </button>
+            </div>
+          </div>
         </div>
-    </footer>    
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/i18n.js"></script>
+      </div>
+    </footer>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <script src="js/search.js"></script>
-    <script src="js/main.js"></script>  
-    <script src="js/ymaps.js"></script>  
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ymaps.js"></script>
   </body>
 </html>

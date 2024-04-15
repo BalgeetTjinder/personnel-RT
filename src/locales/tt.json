@@ -89,5 +89,20 @@
   "footer.links.civilDefense": "Граждан оборонасы һәм гадәттән тыш хәлләрдән саклану",
   "footer.links.methodical": "Методик материаллар",
   "footer.links.archive": "Архив",
-  "footer.askQuestion": "Сорау бирү"
+  "footer.askQuestion": "Сорау бирү",
+
+  "description.title": "Хөрмәтле кунаклар!",
+  "description.text": "Сораугызга тиз һәм квалификацияле җавап алу өчен үзегез турында дөрес мәгълүматлар күрсәтегез. Фамилиягез, исемегез һәм электрон почта адресыгыз күрсәтелергә тиеш. Соравыгыз текстын кыскача һәм дөрес итеп языгыз.",
+  "contact-form.label.lastname": "Фамилия",
+  "contact-form.label.firstname": "Исем",
+  "contact-form.label.patronymic": "Әти исеме (бар икән)",
+  "contact-form.label.email": "Электрон почта адресы",
+  "contact-form.label.question": "Соравыгыз",
+  "contact-form.submit": "Җибәрү",
+
+  "placeholder.lastname": "Фамилиягезне кертегез",
+  "placeholder.firstname": "Исем",
+  "placeholder.patronymic": "Әтиегезнең исемен кертегез (бар булса)",
+  "placeholder.email": "Электрон почта адресыгызны кертегез",
+  "placeholder.question": "1000 символдан артык түгел текст кертегез"
 }
